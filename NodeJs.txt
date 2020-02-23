@@ -1,0 +1,17 @@
+// require fs module 
+const fs = require('fs');
+
+// read directory path
+const path = 'E:/my_directory/';
+
+
+// read all files from directory
+function readDirectory() {
+  var fNames = [5];
+  fs.readdir(path, (err, files) => {
+    fNames = files;
+  });
+  return fNames;
+}
+//console.log(readDirectory());
+

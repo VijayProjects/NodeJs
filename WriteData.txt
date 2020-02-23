@@ -1,0 +1,222 @@
+// require fs module 
+const fs = require('fs');
+
+// read directory path
+function readFiles() {
+  return fs.readdirSync(__dirname); /* If you want to give specific path here write fully qualified path here
+                                          C:/my-dir/ */
+}
+ 
+// get all files from directory
+let directory = readFiles();
+
+directory.forEach(file => {
+  // read file from directory
+  let readFile = fs.readFileSync(file, 'utf8');
+  fs.writeFileSync('WriteData.txt', readFile);
+  console.log( '------------' + file + ' has been written---------------');
+})
+CSS Example
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}Why Study JavaScript?
+
+JavaScript is one of the 3 languages all web developers must learn:
+
+   1. HTML to define the content of web pages
+
+   2. CSS to specify the layout of web pages
+
+   3. JavaScript to program the behavior of web pages
+
+Web pages are not the only place where JavaScript is used. Many desktop and server programs use JavaScript. Node.js is the best known. Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+
+What is jQuery?
+
+jQuery is a lightweight, "write less, do more", JavaScript library.
+
+The purpose of jQuery is to make it much easier to use JavaScript on your website.
+
+jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+
+jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+
+The jQuery library contains the following features:
+
+HTML/DOM manipulation
+CSS manipulation
+HTML event methods
+Effects and animations
+AJAX
+Utilities// require fs module 
+const fs = require('fs');
+
+// read directory path
+const path = 'E:/my_directory/';
+
+
+// read all files from directory
+function readDirectory() {
+  var fNames = [5];
+  fs.readdir(path, (err, files) => {
+    fNames = files;
+  });
+  return fNames;
+}
+//console.log(readDirectory());
+
+// require fs module 
+const fs = require('fs');
+
+// read directory path
+function readFiles() {
+  return fs.readdirSync(__dirname); /* If you want to give specific path here write fully qualified path here
+                                          C:/my-dir/ */
+}
+ 
+// get all files from directory
+let directory = readFiles();
+
+// display all files
+console.log('There are totally '+directory.length + ' are available those are')
+console.log(directory.toString());
+console.log('==================================================================')
+
+// read files data
+directory.forEach(file => {
+  let fileData = fs.readFileSync(file, 'utf8');
+  console.log('-----------------' + file + ' is started----------------');
+  console.log(fileData);
+  console.log('-----------------' + file + ' is completed----------------');
+});
+// require fs module 
+const fs = require('fs');
+
+// read directory path
+function readFiles() {
+  return fs.readdirSync(__dirname); /* If you want to give specific path here write fully qualified path here
+                                          C:/my-dir/ */
+}
+ 
+// get all files from directory
+let directory = readFiles();
+
+directory.forEach(file => {
+  // read file from directory
+  let readFile = fs.readFileSync(file, 'utf8');
+  fs.writeFileSync('WriteData.txt', readFile);
+  console.log( '------------' + file + ' has been written---------------');
+})
+CSS Example
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}Why Study JavaScript?
+
+JavaScript is one of the 3 languages all web developers must learn:
+
+   1. HTML to define the content of web pages
+
+   2. CSS to specify the layout of web pages
+
+   3. JavaScript to program the behavior of web pages
+
+Web pages are not the only place where JavaScript is used. Many desktop and server programs use JavaScript. Node.js is the best known. Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.
+
+What is jQuery?
+
+jQuery is a lightweight, "write less, do more", JavaScript library.
+
+The purpose of jQuery is to make it much easier to use JavaScript on your website.
+
+jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+
+jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+
+The jQuery library contains the following features:
+
+HTML/DOM manipulation
+CSS manipulation
+HTML event methods
+Effects and animations
+AJAX
+Utilities// require fs module 
+const fs = require('fs');
+
+// read directory path
+const path = 'E:/my_directory/';
+
+
+// read all files from directory
+function readDirectory() {
+  var fNames = [5];
+  fs.readdir(path, (err, files) => {
+    fNames = files;
+  });
+  return fNames;
+}
+//console.log(readDirectory());
+
+// require fs module 
+const fs = require('fs');
+
+// read directory path
+function readFiles() {
+  return fs.readdirSync(__dirname); /* If you want to give specific path here write fully qualified path here
+                                          C:/my-dir/ */
+}
+ 
+// get all files from directory
+let directory = readFiles();
+
+// display all files
+console.log('There are totally '+directory.length + ' are available those are')
+console.log(directory.toString());
+console.log('==================================================================')
+
+// read files data
+directory.forEach(file => {
+  let fileData = fs.readFileSync(file, 'utf8');
+  console.log('-----------------' + file + ' is started----------------');
+  console.log(fileData);
+  console.log('-----------------' + file + ' is completed----------------');
+});
+// require fs module 
+const fs = require('fs');
+
+// read directory path
+function readFiles() {
+  return fs.readdirSync(__dirname); /* If you want to give specific path here write fully qualified path here
+                                          C:/my-dir/ */
+}
+ 
+// get all files from directory
+let directory = readFiles();
+
+directory.forEach(file => {
+  // read file from directory
+  let readFile = fs.readFileSync(file, 'utf8');
+  fs.appendFileSync('WriteData.txt', readFile);
+  console.log( '------------' + file + ' has been written---------------');
+})
